@@ -1,0 +1,18 @@
+.chat-message-container{
+    margin-top: 3rem;
+    flex-grow: 1;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.chat-message-container.empty{
+    margin-top: 5rem;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.welcome-message{
+    font-size: 2rem;
+    color: #9303e7d5;
+}
