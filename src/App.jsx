@@ -5,7 +5,8 @@ import './App.css';
 
 function App() {
 
-  const [chats, addChat] = useState(JSON.parse(localStorage.getItem('messages') || []));
+  const messages = localStorage.getItem('messages'); 
+  const [chats, addChat] = useState( messages ? JSON.parse(messages) : []);
 
   useEffect(() => {
     localStorage.setItem('messages', JSON.stringify(chats));
