@@ -1,16 +1,20 @@
 {
   "name": "chat-bot",
   "private": true,
+  "homepage": "https://ismailichuu.github.io/Chat-Bot-using-React",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "dayjs": "^1.11.18",
+    "gh-pages": "^6.3.0",
     "install": "^0.13.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
